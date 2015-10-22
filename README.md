@@ -19,7 +19,7 @@ Install
 
 Run the script:
 
-    bash <(curl -s https://raw.githubusercontent.com/tiy-houston-q3-rails/laptop/master/mac)
+    bash <(curl -s https://raw.githubusercontent.com/EARoa/laptop/master/mac)
 
 
 What it sets up
