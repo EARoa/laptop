@@ -91,7 +91,9 @@ fancy_echo "Installing watch, to execute a program periodically and show the out
   brew install watch
 ### end mac-components/packages
 
-
+# fancy_echo "Starting Postgres ..."
+#   brew services start postgres
+### end mac-components/start-services
 
 fancy_echo "Installing rbenv, to change Ruby versions ..."
   brew install rbenv
@@ -143,8 +145,8 @@ fancy_echo "Configuring Bundler for faster, parallel gem installation ..."
   bundle config --global jobs $((number_of_cores - 1))
 ### end mac-components/bundler
 
-fancy_echo "Installing Suspenders, thoughtbot's Rails template ..."
-  gem install suspenders --no-document
+# fancy_echo "Installing Suspenders, thoughtbot's Rails template ..."
+#   gem install suspenders --no-document
 ### end common-components/default-gems
 
 fancy_echo "Installing Heroku CLI client ..."
@@ -174,6 +176,9 @@ brew install brew-cask
 
 fancy_echo "Installing Screenhero"
 brew cask install screenhero
+
+fancy_echo "Installing Slack"
+brew cask install slack
 
 fancy_echo "Installing your personal additions from ~/.laptop.local ..."
   if [[ -f ~/.laptop.local ]]; then
