@@ -180,6 +180,9 @@ brew cask install screenhero
 fancy_echo "Installing Slack"
 brew cask install slack
 
+fancy_echo "Installing Atom"
+brew cask install atom
+
 fancy_echo "Installing your personal additions from ~/.laptop.local ..."
   if [[ -f ~/.laptop.local ]]; then
     source ~/.laptop.local
